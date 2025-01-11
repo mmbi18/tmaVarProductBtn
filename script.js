@@ -30,16 +30,6 @@ jQuery(document).ready(function($) {
         button.addClass('selected');
 
         // تغییر تصویر به تصویر پیش‌فرض پس از انتخاب
-        $('.woocommerce-main-image img').attr('src', defaultImage);
-    });
-});
-jQuery(document).ready(function($) {
-    var defaultImage = $('.woocommerce-product-gallery__image img').attr('src'); // ذخیره تصویر پیش‌فرض محصول
-
-    $('.variations_form').on('found_variation', function(event, variation) {
-        // بازگرداندن تصویر به تصویر پیش‌فرض محصول
-        $('.woocommerce-product-gallery__image img').attr('src', defaultImage);
-        $('.woocommerce-product-gallery__image img').attr('srcset', defaultImage);
-        $('.woocommerce-product-gallery__image img').attr('sizes', '');
+       // $('.woocommerce-main-image img').attr('src', defaultImage);
     });
 });
